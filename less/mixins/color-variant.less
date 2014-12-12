@@ -1,0 +1,28 @@
+.color-variant(@name, @accent: true) when (@accent = false) {
+  .@{mdc-css-prefix}-@{mdc-text-prefix}-@{name} {
+    .text-variant(@name);
+  }
+  .@{mdc-css-prefix}-@{mdc-bg-prefix}-@{name} {
+    .bg-variant(@name);
+  }
+}
+
+.color-variant(@name, @accent: true) when (@accent = true) {
+  .@{mdc-css-prefix}-@{mdc-text-prefix}-@{name} {
+    .text-variant(@name);
+    .text-accent-variant(@name);
+  }
+  .@{mdc-css-prefix}-@{mdc-bg-prefix}-@{name} {
+    .bg-variant(@name);
+    .bg-accent-variant(@name);
+  }
+}
+
+.bw-color-variant(@name) {
+  .@{mdc-css-prefix}-@{mdc-text-prefix}-@{name} {
+    .text-bw-variant(@name);
+  }
+  .@{mdc-css-prefix}-@{mdc-text-prefix}-@{name} {
+    .text-bw-variant(@name);
+  }
+}
