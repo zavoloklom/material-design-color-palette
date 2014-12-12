@@ -1,0 +1,153 @@
+//-- Contextual background color variations
+
+.bg-variant(@name) {
+  // get colors
+  .get-color-variables(@name);
+
+  // use primary color
+  background-color: @@color-500;
+  a&:hover,
+  a&:focus {
+    background-color: @@color-600;
+  }
+
+  &-50 {
+    background-color: @@color-50;
+    a&:hover,
+    a&:focus {
+      background-color: @@color-100;
+    }
+  }
+  &-100 {
+    background-color: @@color-100;
+    a&:hover,
+    a&:focus {
+      background-color: @@color-200;
+    }
+  }
+  &-200 {
+    background-color: @@color-200;
+    a&:hover,
+    a&:focus {
+      background-color: @@color-300;
+    }
+  }
+  &-300 {
+    background-color: @@color-300;
+    a&:hover,
+    a&:focus {
+      background-color: @@color-400;
+    }
+  }
+  &-400 {
+    background-color: @@color-400;
+    a&:hover,
+    a&:focus {
+      background-color: @@color-500;
+    }
+  }
+  &-500 {
+    background-color: @@color-500;
+    a&:hover,
+    a&:focus {
+      background-color: @@color-600;
+    }
+  }
+  &-600 {
+    background-color: @@color-600;
+    a&:hover,
+    a&:focus {
+      background-color: @@color-700;
+    }
+  }
+  &-700 {
+    background-color: @@color-700;
+    a&:hover,
+    a&:focus {
+      background-color: @@color-800;
+    }
+  }
+  &-800 {
+    background-color: @@color-800;
+    a&:hover,
+    a&:focus {
+      background-color: @@color-900;
+    }
+  }
+  &-900 {
+    background-color: @@color-900;
+    a&:hover,
+    a&:focus {
+      background-color: darken(@@color-900, 10%);
+    }
+  }
+}
+
+.bg-accent-variant(@name) {
+  // get colors
+  .get-color-variables(@name);
+
+  &-A100 {
+    background-color: @@color-A100;
+    a&:hover,
+    a&:focus {
+      background-color: darken(@@color-A100, 10%);
+    }
+  }
+  &-A200 {
+    background-color: @@color-A200;
+    a&:hover,
+    a&:focus {
+      background-color: darken(@@color-A200, 10%);
+    }
+  }
+  &-A400 {
+    background-color: @@color-A400;
+    a&:hover,
+    a&:focus {
+      background-color: darken(@@color-A400, 10%);
+    }
+  }
+  &-A700 {
+    background-color: @@color-A700;
+    a&:hover,
+    a&:focus {
+      background-color: darken(@@color-A700, 10%);
+    }
+  }
+}
+
+.bg-bw-variant(@name) {
+  // get colors
+  .get-bw-color-variables(@name);
+
+
+  &-lighter {
+    background-color: @@color-lighter;
+    a&:hover,
+    a&:focus {
+      background-color: @@color-light;
+    }
+  }
+  &-light {
+    background-color: @@color-light;
+    a&:hover,
+    a&:focus {
+      background-color: @@color-dark;
+    }
+  }
+  &-dark {
+    background-color: @@color-dark;
+    a&:hover,
+    a&:focus {
+      background-color: @@color-darker;
+    }
+  }
+  &-darker {
+    background-color: @@color-darker;
+    a&:hover,
+    a&:focus {
+      background-color: @name;
+    }
+  }
+}
