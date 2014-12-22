@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/bootstrap.docs.min.css">
+    <link rel="stylesheet" href="stylesheets/jquery.highlight.css" >
     <link rel="stylesheet" href="css/material-design-color-palette.min.css">
     <link rel="stylesheet" href="stylesheets/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
@@ -68,10 +69,10 @@
 
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">Get Started</a></li>
+                <li><a href="index.html">Get Started</a></li>
                 <li><a href="colors.html">Colors</a></li>
                 <!-- <li><a href="constructor.html">Constructor</a></li> -->
-                <li><a href="examples.html">Examples</a></li>
+                <li class="active"><a href="examples.html">Examples</a></li>
                 <li><a href="license.html">License</a></li>
             </ul>
         </div>
@@ -124,97 +125,176 @@
 </div>
 
 <div class="container">
+<div class="row">
 
-    <div class="row">
-        <div class="col-md-9 col-xs-12" role="main">
+    <div class="col-md-9 col-xs-12" role="main">
+        <section id="primary">
+            <h2 class="page-header">
+                Primary colors
+            </h2>
 
-            <section id="getting-started">
-                <h2 class="page-header">Getting Started</h2>
-            </section>
+            <div class="row">
+                <div class="col-md-3 col-sm-4">
+                    <p>
+                        <span class="mdc-text-amber">Amber primary color</span>
+                    </p>
+                    <p>
+                        <div class="mdc-bg-amber" style="height: 32px"></div>
+                    </p>
+                </div>
+                <div class="col-md-9 col-sm-8">
+                    <p>
+                        Choose material color from <a href="colors.html">colors page</a> and use class <code>.mdc-text-{color name}</code> for colored text or <code>.mdc-bg-{color name}</code> for colored background.
+                    </p>
+                    <div>
+                            <pre class="code" lang="html">
+                                <!-- Colored text -->
+                                <span class="mdc-text-amber">Amber primary color</span>
 
-            <section id="default-css">
-                <h3 class="page-header">BASIC: Default CSS</h3>
-                <p>Use this method to get the default Material Design Color Palette CSS.</p>
-                <ol>
-                    <li>Download latest version of Material Design Color Palette from this site or GitHub.</li>
-                    <li>Unpack the entire <code>material-design-color-palette</code> archive into your project.</li>
-                    <li>
-                        In the <code>&lt;head&gt;</code> of your html, reference the location to your material-design-color-palette.min.css.
-                        <br /><br />
-                        <div class="highlight">
-                            <pre><code class="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"path/to/material-design-color-palette/css/material-design-color-palette.min.css"</span><span class="nt">&gt;</span></code></pre>
-                        </div>
-                    </li>
-                    <li>Check out the <a href="examples.html">examples</a> to start using Material Design Color Palette!</li>
-                </ol>
-            </section>
-
-            <section id="custom">
-                <h3 class="page-header">PRO: Custom LESS</h3>
-                <p>Use this method to customize Material Design Color Palette using LESS.</p>
-                <ol>
-                    <li>Download latest version of Material Design Color Palette from this site or GitHub.</li>
-                    <li>Unpack the entire <code>material-design-color-palette</code> archive into your project.</li>
-                    <li>
-                        <p>Open your project's <code>path/to/material-design-color-palette/less/variables/colors.less</code> to change colors hex-values.
-                        </p><p class="alert alert-danger"><i class="md md-warning"></i> Be carefully to change variables names because of mixins uses this names.</p>
-                    </li>
-                    <li>
-                        <p>Open your project's <code>path/to/material-design-color-palette/less/variables/main.less</code> to change prefixes <code>@mdc-css-prefix</code>, <code>@mdc-text-prefix</code> and <code>@mdc-bg-prefix</code>.
-                        </p><p class="alert alert-success">Css class template: <code>{@mdc-css-prefix}-{@mdc-text-prefix or @mdc-bg-prefix}-{color name}-{color value}</code>. <br> Example: <code>mdc-text-red-400</code></p>
-                    </li>
-                    <li>Re-compile your LESS if using a static compiler.</li>
-                    <li>Check out the <a href="examples.html">examples</a> to start using Material Design Color Palette!</li>
-                </ol>
-            </section>
-
-            <section id="license">
-                <h2 class="page-header">License</h2>
-                <p>The full details of how Material Design Color Palette is licensed and 'Thanks to' section: <a href="license.html">License page</a>.</p>
-            </section>
-
-            <section id="changelog">
-                <h2 class="page-header">Changelog</h2>
-
-                <ul class="task-list">
-                    <li>v1.0.0 - add all available colors from Google</li>
-                </ul>
-            </section>
-
-            <section id="author">
-                <h2 class="page-header">Author</h2>
-                <ul class="task-list">
-                    <li>Email: <a href="mailto:s.kupletsky@gmail.com">s.kupletsky@gmail.com</a>
-                    </li>
-                    <li>Twitter: <a href="https://twitter.com/zavoloklom">https://twitter.com/zavoloklom</a>
-                    </li>
-                    <li>GitHub: <a href="https://github.com/zavoloklom/">https://github.com/zavoloklom/</a>
-                    </li>
-                    <li>CodePen: <a href="http://codepen.io/zavoloklom/">http://codepen.io/zavoloklom/</a>
-                    </li>
-                </ul>
-            </section>
-
-        </div>
-
-        <div class="col-md-3 hidden-sm hidden-xs hidden-print">
-            <div data-spy="affix" data-offset-top="450" data-offset-bottom="70" class="bs-docs-sidebar" role="complementary">
-                <ul class="nav bs-docs-sidenav">
-                    <li>
-                        <a href="#getting-started">Getting started</a>
-                        <ul class="nav">
-                            <li><a href="#default-css">Default CSS</a></li>
-                            <li><a href="#custom">Custom LESS or SCSS</a></li>
+                                <!-- Colored background -->
+                                <div class="mdc-bg-amber" style="height: 32px"></div></pre>
+                    </div>
+                    <div class="alert alert-success">
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="md md-warning md-lg"></i>
+                                You can change prefixes by customizing less files
+                            </li>
                         </ul>
-                    </li>
-                    <li><a href="#license">License</a></li>
-                    <li><a href="#changelog">Changelog</a></li>
-                </ul>
-                <a class="back-to-top" href="#top">Back to top</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
+        <section id="other">
+            <h2 class="page-header">
+                Other colors
+            </h2>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-4">
+                    <p>
+                        <span class="mdc-text-blue-800">Blue-800 color</span>
+                    </p>
+                    <p>
+                    <div class="mdc-bg-blue-800" style="height: 32px"></div>
+                    </p>
+                </div>
+                <div class="col-md-9 col-sm-8">
+                    <p>
+                        Choose material color and value from <a href="colors.html">colors page</a> and use class <code>.mdc-text-{color name}-{color value}</code> for colored text or <code>.mdc-bg-{color name}-{color value}</code> for colored background.
+                    </p>
+                    <div>
+                            <pre class="code" lang="html">
+                                <!-- Colored text -->
+                                <span class="mdc-text-blue-800">Blue-800 color</span>
+
+                                <!-- Colored background -->
+                                <div class="mdc-bg-blue-800" style="height: 32px"></div></pre>
+                    </div>
+                    <div class="alert alert-success">
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="md md-warning md-lg"></i>
+                                You can change prefixes by customizing less files
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="links">
+            <h2 class="page-header">
+                Colored links
+            </h2>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-4">
+                    <p>
+                        <a class="mdc-text-green-400">Green-400 color</a>
+                    </p>
+                    <p>
+                    <a class="mdc-bg-green-400" style="display: block; height: 32px"></a>
+                    </p>
+                </div>
+                <div class="col-md-9 col-sm-8">
+                    <p>
+                        When you use MD Color Palette classes on links you get darker color on <code>hover</code> state.
+                    </p>
+                    <p><strong>Example:</strong> for class <code>mdc-text-green-400</code> or <code>mdc-bg-green-400</code> main color is <kbd>green-400</kbd> and in hover state color is <kbd>green-500</kbd></p>
+                    <div>
+                            <pre class="code" lang="html">
+                                <!-- Colored link -->
+                                <a class="mdc-text-green-400">Green-400 color</a>
+
+                                <!-- Link with colored background -->
+                                <a class="mdc-bg-green-400" style="display: block; height: 32px"></a></pre>
+                    </div>
+                    <div class="alert alert-success">
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="md md-warning md-lg"></i>
+                                You can change prefixes by customizing less files
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="icons">
+            <h2 class="page-header">
+                Material Design Icons
+            </h2>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-4">
+                    <p>
+                        <i class="md md-settings md-spin md-2x mdc-text-green-400"></i>
+                    </p>
+                    <p>
+                        <i class="md md-local-florist md-2x mdc-text-yellow mdc-bg-green-400"></i>
+                    </p>
+                </div>
+                <div class="col-md-9 col-sm-8">
+                    <p>
+                        You can use this classes with <a href="http://zavoloklom.github.io/material-design-iconic-font/" target="_blank">Material Design Iconic Font</a>.
+                    </p>
+                    <div>
+                            <pre class="code" lang="html">
+                                <!-- Colored icon -->
+                                <i class="md md-settings md-spin md-2x mdc-text-green-400"></i>
+
+                                <!-- Colored icon with colored background -->
+                                <i class="md md-local-florist md-2x mdc-text-yellow mdc-bg-green-400"></i></pre>
+                    </div>
+                    <div class="alert alert-success">
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="md md-warning md-lg"></i>
+                                You can change prefixes by customizing less files
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+
+    <div class="col-md-3 hidden-sm hidden-xs hidden-print">
+        <div data-spy="affix" data-offset-top="450" data-offset-bottom="70" class="bs-docs-sidebar" role="complementary">
+            <ul class="nav bs-docs-sidenav">
+                <li><a href="#primary">Primary colors</a></li>
+                <li><a href="#other">Other colors</a></li>
+                <li><a href="#links">Colored links</a></li>
+                <li><a href="#icons">Material Design Icons</a></li>
+            </ul>
+            <a class="back-to-top" href="#top">Back to top</a>
+        </div>
+    </div>
+
+</div>
 </div>
 
 <footer class="container">
@@ -230,10 +310,19 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script src="javascripts/jquery.highlight.js"></script>
+<script>
+    $(document).ready(function(){
+        $('pre.code').highlight({source:1, zebra:1, indent:'tabs', list:'ol'});
+    });
+</script>
+
 <script src="javascripts/main.js"></script>
 
 <script src='https://apis.google.com/js/platform.js'></script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -244,6 +333,7 @@
     ga('send', 'pageview');
 
 </script>
+
 <script>
     // Events
     $('.gittip-btn').on('click', function() {

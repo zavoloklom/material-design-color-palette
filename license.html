@@ -68,11 +68,11 @@
 
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">Get Started</a></li>
+                <li><a href="index.html">Get Started</a></li>
                 <li><a href="colors.html">Colors</a></li>
                 <!-- <li><a href="constructor.html">Constructor</a></li> -->
                 <li><a href="examples.html">Examples</a></li>
-                <li><a href="license.html">License</a></li>
+                <li class="active"><a href="license.html">License</a></li>
             </ul>
         </div>
     </div>
@@ -124,74 +124,29 @@
 </div>
 
 <div class="container">
-
     <div class="row">
+
         <div class="col-md-9 col-xs-12" role="main">
 
-            <section id="getting-started">
-                <h2 class="page-header">Getting Started</h2>
-            </section>
-
-            <section id="default-css">
-                <h3 class="page-header">BASIC: Default CSS</h3>
-                <p>Use this method to get the default Material Design Color Palette CSS.</p>
-                <ol>
-                    <li>Download latest version of Material Design Color Palette from this site or GitHub.</li>
-                    <li>Unpack the entire <code>material-design-color-palette</code> archive into your project.</li>
+            <section id="code-license">
+                <h2 class="page-header">Code License</h2>
+                <ul>
                     <li>
-                        In the <code>&lt;head&gt;</code> of your html, reference the location to your material-design-color-palette.min.css.
-                        <br /><br />
-                        <div class="highlight">
-                            <pre><code class="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"path/to/material-design-color-palette/css/material-design-color-palette.min.css"</span><span class="nt">&gt;</span></code></pre>
-                        </div>
+                        Applies to all CSS, LESS and SCSS files in the following directories:
+                        <code>material-design-color-palette/css/</code>,
+                        <code>material-design-color-palette/less/</code>.
                     </li>
-                    <li>Check out the <a href="examples.html">examples</a> to start using Material Design Color Palette!</li>
-                </ol>
-            </section>
-
-            <section id="custom">
-                <h3 class="page-header">PRO: Custom LESS</h3>
-                <p>Use this method to customize Material Design Color Palette using LESS.</p>
-                <ol>
-                    <li>Download latest version of Material Design Color Palette from this site or GitHub.</li>
-                    <li>Unpack the entire <code>material-design-color-palette</code> archive into your project.</li>
-                    <li>
-                        <p>Open your project's <code>path/to/material-design-color-palette/less/variables/colors.less</code> to change colors hex-values.
-                        </p><p class="alert alert-danger"><i class="md md-warning"></i> Be carefully to change variables names because of mixins uses this names.</p>
-                    </li>
-                    <li>
-                        <p>Open your project's <code>path/to/material-design-color-palette/less/variables/main.less</code> to change prefixes <code>@mdc-css-prefix</code>, <code>@mdc-text-prefix</code> and <code>@mdc-bg-prefix</code>.
-                        </p><p class="alert alert-success">Css class template: <code>{@mdc-css-prefix}-{@mdc-text-prefix or @mdc-bg-prefix}-{color name}-{color value}</code>. <br> Example: <code>mdc-text-red-400</code></p>
-                    </li>
-                    <li>Re-compile your LESS if using a static compiler.</li>
-                    <li>Check out the <a href="examples.html">examples</a> to start using Material Design Color Palette!</li>
-                </ol>
-            </section>
-
-            <section id="license">
-                <h2 class="page-header">License</h2>
-                <p>The full details of how Material Design Color Palette is licensed and 'Thanks to' section: <a href="license.html">License page</a>.</p>
-            </section>
-
-            <section id="changelog">
-                <h2 class="page-header">Changelog</h2>
-
-                <ul class="task-list">
-                    <li>v1.0.0 - add all available colors from Google</li>
+                    <li>License: MIT License</li>
+                    <li>URL: <a href="http://opensource.org/licenses/mit-license.html">http://opensource.org/licenses/mit-license.html</a></li>
                 </ul>
             </section>
 
-            <section id="author">
-                <h2 class="page-header">Author</h2>
-                <ul class="task-list">
-                    <li>Email: <a href="mailto:s.kupletsky@gmail.com">s.kupletsky@gmail.com</a>
-                    </li>
-                    <li>Twitter: <a href="https://twitter.com/zavoloklom">https://twitter.com/zavoloklom</a>
-                    </li>
-                    <li>GitHub: <a href="https://github.com/zavoloklom/">https://github.com/zavoloklom/</a>
-                    </li>
-                    <li>CodePen: <a href="http://codepen.io/zavoloklom/">http://codepen.io/zavoloklom/</a>
-                    </li>
+            <section id="documentation-license">
+                <h2 class="page-header">Documentation License</h2>
+                <ul>
+                    <li>Applies to all project files that are not a part of the other licenses.</li>
+                    <li>License: Attribution-ShareAlike 4.0 International license</li>
+                    <li>URL: <a href="http://creativecommons.org/licenses/by-sa/4.0/">http://creativecommons.org/licenses/by-sa/4.0/</a></li>
                 </ul>
             </section>
 
@@ -200,15 +155,9 @@
         <div class="col-md-3 hidden-sm hidden-xs hidden-print">
             <div data-spy="affix" data-offset-top="450" data-offset-bottom="70" class="bs-docs-sidebar" role="complementary">
                 <ul class="nav bs-docs-sidenav">
-                    <li>
-                        <a href="#getting-started">Getting started</a>
-                        <ul class="nav">
-                            <li><a href="#default-css">Default CSS</a></li>
-                            <li><a href="#custom">Custom LESS or SCSS</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#license">License</a></li>
-                    <li><a href="#changelog">Changelog</a></li>
+                    <li><a href="#code-license">Code License</a></li>
+                    <li><a href="#documentation-license">Documentation License</a></li>
+                    <!-- <li><a href="#special-thanks">Special Thanks</a></li>-->
                 </ul>
                 <a class="back-to-top" href="#top">Back to top</a>
             </div>
