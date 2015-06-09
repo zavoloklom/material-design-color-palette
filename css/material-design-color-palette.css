@@ -1,5 +1,5 @@
 /*!
- *  Material Design Color Palette 1.0.0 by Sergey Kupletsky (@zavoloklom) - http://zavoloklom.github.io/material-design-color-palette/
+ *  Material Design Color Palette 1.0.1 by Sergey Kupletsky (@zavoloklom) - http://zavoloklom.github.io/material-design-color-palette/
  *  License - https://github.com/zavoloklom/material-design-color-palette/blob/master/License (MIT license)
  */
 .mdc-text-red {
@@ -3829,24 +3829,24 @@ a.mdc-bg-blue-grey-900:focus {
 }
 a.mdc-text-white-lighter:hover,
 a.mdc-text-white-lighter:focus {
-  color: rgba(255, 255, 255, 0.26);
+  color: rgba(255, 255, 255, 0.3);
 }
 .mdc-text-white-light {
-  color: rgba(255, 255, 255, 0.26);
+  color: rgba(255, 255, 255, 0.3);
 }
 a.mdc-text-white-light:hover,
 a.mdc-text-white-light:focus {
-  color: rgba(255, 255, 255, 0.54);
+  color: rgba(255, 255, 255, 0.7);
 }
 .mdc-text-white-dark {
-  color: rgba(255, 255, 255, 0.54);
+  color: rgba(255, 255, 255, 0.7);
 }
 a.mdc-text-white-dark:hover,
 a.mdc-text-white-dark:focus {
-  color: rgba(255, 255, 255, 0.87);
+  color: #ffffff;
 }
 .mdc-text-white-darker {
-  color: rgba(255, 255, 255, 0.87);
+  color: #ffffff;
 }
 a.mdc-text-white-darker:hover,
 a.mdc-text-white-darker:focus {
@@ -3857,24 +3857,24 @@ a.mdc-text-white-darker:focus {
 }
 a.mdc-text-white-lighter:hover,
 a.mdc-text-white-lighter:focus {
-  color: rgba(255, 255, 255, 0.26);
+  color: rgba(255, 255, 255, 0.3);
 }
 .mdc-text-white-light {
-  color: rgba(255, 255, 255, 0.26);
+  color: rgba(255, 255, 255, 0.3);
 }
 a.mdc-text-white-light:hover,
 a.mdc-text-white-light:focus {
-  color: rgba(255, 255, 255, 0.54);
+  color: rgba(255, 255, 255, 0.7);
 }
 .mdc-text-white-dark {
-  color: rgba(255, 255, 255, 0.54);
+  color: rgba(255, 255, 255, 0.7);
 }
 a.mdc-text-white-dark:hover,
 a.mdc-text-white-dark:focus {
-  color: rgba(255, 255, 255, 0.87);
+  color: #ffffff;
 }
 .mdc-text-white-darker {
-  color: rgba(255, 255, 255, 0.87);
+  color: #ffffff;
 }
 a.mdc-text-white-darker:hover,
 a.mdc-text-white-darker:focus {
