@@ -1,0 +1,45 @@
+{
+  "name": "material-design-color-palette",
+  "description": "Material Design Color Palette",
+  "version": "1.0.1",
+  "keywords": [
+    "material design",
+    "design",
+    "colors",
+    "color palette"
+  ],
+  "author": "Sergey Kupletsky <s.kupletsky@gmail.com> (http://github.com/zavoloklom)",
+  "license": "MIT",
+  "main": [
+    "./css/material-design-color-palette.css",
+    "./css/material-design-color-palette.min.css"
+  ],
+  "ignore": [
+    "*/.*",
+    "*.json",
+    "*.md"
+  ],
+  "homepage": "http://zavoloklom.github.io/material-design-color-palette/",
+  "bugs": {
+    "url": "https://github.com/zavoloklom/material-design-color-palette/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zavoloklom/material-design-color-palette.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^1.0.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-less-to-sass": "0.0.10",
+    "grunt-pleeease": "^1.3.2",
+    "load-grunt-config": "^0.17.1",
+    "time-grunt": "^1.2.1"
+  },
+  "dependencies": {}
+}
