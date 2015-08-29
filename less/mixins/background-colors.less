@@ -1,6 +1,6 @@
 //-- Contextual background color variations
 
-.bg-variant(@name) {
+.bg-variant(@name, @all: true) when (@all = true) {
   // get colors
   .get-color-variables(@name);
 
@@ -80,6 +80,18 @@
     a&:focus {
       background-color: darken(@@color-900, 10%);
     }
+  }
+}
+
+.bg-variant(@name, @all: true) when (@all = false) {
+  // get colors
+  .get-color-variables(@name);
+
+  // use primary color
+  background-color: @@color-500;
+  a&:hover,
+  a&:focus {
+    background-color: @@color-600;
   }
 }
 

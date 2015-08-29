@@ -1,6 +1,6 @@
 //-- Contextual text color variations
 
-.text-variant(@name) {
+.text-variant(@name, @all: true) when (@all = true) {
   // get colors
   .get-color-main-variables(@name);
 
@@ -83,6 +83,17 @@
   }
 }
 
+.text-variant(@name, @all: true) when (@all = false) {
+  // get colors
+  .get-color-main-variables(@name);
+
+  // use primary color
+  color: @@color-500;
+  a&:hover,
+  a&:focus {
+    color: @@color-600;
+  }
+}
 
 .text-accent-variant(@name) {
   // get colors
