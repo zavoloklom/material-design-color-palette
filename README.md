@@ -1,4 +1,4 @@
-# [Material Design Color Palette v1.0.0](http://zavoloklom.github.io/material-design-color-palette)
+# [Material Design Color Palette v1.1.0](http://zavoloklom.github.io/material-design-color-palette)
 ### Material Design Color Palette: LESS/CSS toolkit
 
 [![Material Design Color Palette](http://zavoloklom.github.io/material-design-color-palette/images/Material-Design-Color-Palette.png)](http://zavoloklom.github.io/material-design-color-palette/)
@@ -9,7 +9,7 @@ This color palette comprises primary and accent colors that can be used for illu
 
 Get started at [http://zavoloklom.github.io/material-design-color-palette](http://zavoloklom.github.io/material-design-color-palette)
 
-Download: [v1.0.0 (ZIP)](https://github.com/zavoloklom/material-design-color-palette/releases/download/v1.0.0/material-design-color-palette.zip)
+Download: [v1.1.0 (ZIP)](https://github.com/zavoloklom/material-design-color-palette/releases/download/v1.1.0/material-design-color-palette.zip)
 
 
 ##Install
@@ -29,9 +29,9 @@ Use this method to customize Material Design Color Palette using LESS.
 - Download latest version of Material Design Color Palette.
 - Unpack the entire `material-design-color-palette` archive into your project.
 - Open your project's `path/to/material-design-color-palette/less/variables/colors.less` to change HEX values.
-- Open your project's `path/to/material-design-color-palette/less/variables/main.less` to change prefixes `@mdc-css-prefix`, `@mdc-text-prefix` and `@mdc-bg-prefix`.
+- Open your project's `path/to/material-design-color-palette/less/variables/main.less` to change prefixes `@zmdc-css-prefix`, `@zmdc-text-prefix` and `@zmdc-bg-prefix`.
 
-> Css class template: {@mdc-css-prefix}-{@mdc-text-prefix or @mdc-bg-prefix}-{color name}-{color value}.
+> Css class template: {@zmdc-css-prefix}-{@zmdc-text-prefix or @zmdc-bg-prefix}-{color name}-{color value}.
 > Example: mdc-text-red-400
 
 - Re-compile your LESS if using a static compiler.
@@ -43,6 +43,7 @@ Use this method to customize Material Design Color Palette using LESS.
 - Full details: [License page](http://zavoloklom.github.io/material-design-color-palette/license.html)
 
 ## Changelog
+- v1.1.0 - add some changes into LESS mixins and variables
 - v1.0.0 - add all colors from [Google](http://www.google.com/design/spec/style/color.html#color-color-palette)
 
 ## Versioning
@@ -61,6 +62,6 @@ For more information on SemVer, please visit http://semver.org.
 ## Author
 - Email: s.kupletsky@gmail.com
 - Twitter: https://twitter.com/zavoloklom
-- GitHub: https://github.com/zavoloklom/
-- CodePen: http://codepen.io/zavoloklom/
-- Dribble: https://dribbble.com/zavoloklom (waiting for invite)
+- GitHub: https://github.com/zavoloklom
+- CodePen: http://codepen.io/zavoloklom
+- Dribble: https://dribbble.com/zavoloklom
