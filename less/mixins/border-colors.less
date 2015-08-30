@@ -1,0 +1,162 @@
+//-- Contextual border color variations
+
+.zmd-border-variant(@name, @all: true) {
+  // get colors
+  .zmd-get-color-main-variables(@name);
+
+  // use primary color
+  border-color: @@color-500;
+  a&:hover,
+  a&:focus {
+    border-color: @@color-600;
+  }
+
+  // color variants
+  & when (@all = true) {
+    &-50 {
+      border-color: @@color-50;
+      a&:hover,
+      a&:focus {
+        border-color: @@color-100;
+      }
+    }
+    &-100 {
+      border-color: @@color-100;
+      a&:hover,
+      a&:focus {
+        border-color: @@color-200;
+      }
+    }
+    &-200 {
+      border-color: @@color-200;
+      a&:hover,
+      a&:focus {
+        border-color: @@color-300;
+      }
+    }
+    &-300 {
+      border-color: @@color-300;
+      a&:hover,
+      a&:focus {
+        border-color: @@color-400;
+      }
+    }
+    &-400 {
+      border-color: @@color-400;
+      a&:hover,
+      a&:focus {
+        border-color: @@color-500;
+      }
+    }
+    &-500 {
+      border-color: @@color-500;
+      a&:hover,
+      a&:focus {
+        border-color: @@color-600;
+      }
+    }
+    &-600 {
+      border-color: @@color-600;
+      a&:hover,
+      a&:focus {
+        border-color: @@color-700;
+      }
+    }
+    &-700 {
+      border-color: @@color-700;
+      a&:hover,
+      a&:focus {
+        border-color: @@color-800;
+      }
+    }
+    &-800 {
+      border-color: @@color-800;
+      a&:hover,
+      a&:focus {
+        border-color: @@color-900;
+      }
+    }
+    &-900 {
+      border-color: @@color-900;
+      a&:hover,
+      a&:focus {
+        border-color: darken(@@color-900, 10%);
+      }
+    }
+  }
+}
+
+.zmd-border-variant-accent(@name) {
+  // get colors
+  .zmd-get-color-accent-variables(@name);
+
+  &-A100 {
+    border-color: @@color-A100;
+    a&:hover,
+    a&:focus {
+      border-color: darken(@@color-A100, 10%);
+    }
+  }
+  &-A200 {
+    border-color: @@color-A200;
+    a&:hover,
+    a&:focus {
+      border-color: darken(@@color-A200, 10%);
+    }
+  }
+  &-A400 {
+    border-color: @@color-A400;
+    a&:hover,
+    a&:focus {
+      border-color: darken(@@color-A400, 10%);
+    }
+  }
+  &-A700 {
+    border-color: @@color-A700;
+    a&:hover,
+    a&:focus {
+      border-color: darken(@@color-A700, 10%);
+    }
+  }
+}
+
+.zmd-border-variant-bw(@name) {
+  // get colors
+  .zmd-get-bw-color-variables(@name);
+
+  // use base color
+  border-color: @@color-base;
+  a&:hover,
+  a&:focus {
+    border-color: @@color-base;
+  }
+
+  &-lighter {
+    border-color: @@color-lighter;
+    a&:hover,
+    a&:focus {
+      border-color: @@color-light;
+    }
+  }
+  &-light {
+    border-color: @@color-light;
+    a&:hover,
+    a&:focus {
+      border-color: @@color-dark;
+    }
+  }
+  &-dark {
+    border-color: @@color-dark;
+    a&:hover,
+    a&:focus {
+      border-color: @@color-darker;
+    }
+  }
+  &-darker {
+    border-color: @@color-darker;
+    a&:hover,
+    a&:focus {
+      border-color: @name;
+    }
+  }
+}

@@ -11,6 +11,13 @@
       .zmd-bg-variant-accent(@name);
     }
   }
+  // Border color
+  .@{zmdc-css-prefix}-@{zmdc-border-prefix}-@{name} {
+    .zmd-border-variant(@name);
+    & when(@accent = true) {
+      .zmd-border-variant-accent(@name);
+    }
+  }
 }
 
 .zmd-color-variant-bw(@name) {
@@ -19,5 +26,8 @@
   }
   .@{zmdc-css-prefix}-@{zmdc-text-prefix}-@{name} {
     .zmd-text-variant-bw(@name);
+  // Border color
+  .@{zmdc-css-prefix}-@{zmdc-border-prefix}-@{name} {
+    .zmd-border-variant-bw(@name);
   }
 }
