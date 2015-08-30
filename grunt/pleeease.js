@@ -8,19 +8,7 @@ module.exports = {
             minifier: false
         },
         files: {
-            'dist/css/material-design-iconic-font.css': 'dist/css/material-design-iconic-font.css'
-        }
-    },
-    dev: {
-        options: {
-            autoprefixer: {'browsers': ["> 1%", "last 2 versions"]},
-            filters: {'oldIE': false},
-            opacity: true,
-            pseudoElements: true,
-            minifier: false
-        },
-        files: {
-            'test/css/material-design-iconic-font.css': 'test/css/material-design-iconic-font.css'
+            'css/material-design-color-palette.css': 'css/material-design-color-palette.css'
         }
     },
     'prod-min': {
@@ -32,7 +20,7 @@ module.exports = {
             minifier: {preserveHacks: true, removeAllComments: true}
         },
         files: {
-            'dist/css/material-design-iconic-font.min.css': 'dist/css/material-design-iconic-font.css'
+            'css/material-design-color-palette.min.css': 'css/material-design-color-palette.css'
         }
     }
 };
