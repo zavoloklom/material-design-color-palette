@@ -1,8 +1,8 @@
 //-- Contextual text color variations
 
-.text-variant(@name, @all: true) when (@all = true) {
+.zmd-text-variant(@name, @all: true) {
   // get colors
-  .get-color-main-variables(@name);
+  .zmd-get-color-main-variables(@name);
 
   // use primary color
   color: @@color-500;
@@ -11,93 +11,85 @@
     color: @@color-600;
   }
 
-  &-50 {
-    color: @@color-50;
-    a&:hover,
-    a&:focus {
+  // color variants
+  & when (@all = true) {
+    &-50 {
+      color: @@color-50;
+      a&:hover,
+      a&:focus {
+        color: @@color-100;
+      }
+    }
+    &-100 {
       color: @@color-100;
+      a&:hover,
+      a&:focus {
+        color: @@color-200;
+      }
     }
-  }
-  &-100 {
-    color: @@color-100;
-    a&:hover,
-    a&:focus {
+    &-200 {
       color: @@color-200;
+      a&:hover,
+      a&:focus {
+        color: @@color-300;
+      }
     }
-  }
-  &-200 {
-    color: @@color-200;
-    a&:hover,
-    a&:focus {
+    &-300 {
       color: @@color-300;
+      a&:hover,
+      a&:focus {
+        color: @@color-400;
+      }
     }
-  }
-  &-300 {
-    color: @@color-300;
-    a&:hover,
-    a&:focus {
+    &-400 {
       color: @@color-400;
+      a&:hover,
+      a&:focus {
+        color: @@color-500;
+      }
     }
-  }
-  &-400 {
-    color: @@color-400;
-    a&:hover,
-    a&:focus {
+    &-500 {
       color: @@color-500;
+      a&:hover,
+      a&:focus {
+        color: @@color-600;
+      }
     }
-  }
-  &-500 {
-    color: @@color-500;
-    a&:hover,
-    a&:focus {
+    &-600 {
       color: @@color-600;
+      a&:hover,
+      a&:focus {
+        color: @@color-700;
+      }
     }
-  }
-  &-600 {
-    color: @@color-600;
-    a&:hover,
-    a&:focus {
+    &-700 {
       color: @@color-700;
+      a&:hover,
+      a&:focus {
+        color: @@color-800;
+      }
     }
-  }
-  &-700 {
-    color: @@color-700;
-    a&:hover,
-    a&:focus {
+    &-800 {
       color: @@color-800;
+      a&:hover,
+      a&:focus {
+        color: @@color-900;
+      }
     }
-  }
-  &-800 {
-    color: @@color-800;
-    a&:hover,
-    a&:focus {
+    &-900 {
       color: @@color-900;
+      a&:hover,
+      a&:focus {
+        color: darken(@@color-900, 10%);
+      }
     }
   }
-  &-900 {
-    color: @@color-900;
-    a&:hover,
-    a&:focus {
-      color: darken(@@color-900, 10%);
-    }
-  }
+
 }
 
-.text-variant(@name, @all: true) when (@all = false) {
+.zmd-text-variant-accent(@name) {
   // get colors
-  .get-color-main-variables(@name);
-
-  // use primary color
-  color: @@color-500;
-  a&:hover,
-  a&:focus {
-    color: @@color-600;
-  }
-}
-
-.text-accent-variant(@name) {
-  // get colors
-  .get-color-accent-variables(@name);
+  .zmd-get-color-accent-variables(@name);
 
 
   &-A100 {
@@ -130,9 +122,9 @@
   }
 }
 
-.text-bw-variant(@name) {
+.zmd-text-variant-bw(@name) {
   // get colors
-  .get-bw-color-variables(@name);
+  .zmd-get-bw-color-variables(@name);
 
   &-lighter {
     color: @@color-lighter;

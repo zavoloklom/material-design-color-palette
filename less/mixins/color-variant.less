@@ -1,28 +1,23 @@
-.color-variant(@name, @accent: true) when (@accent = false) {
-  .@{mdc-css-prefix}-@{mdc-text-prefix}-@{name} {
-    .text-variant(@name);
+.zmd-color-variant(@name, @accent: true) {
+  .@{zmdc-css-prefix}-@{zmdc-text-prefix}-@{name} {
+    .zmd-text-variant(@name);
+    & when(@accent = true) {
+      .zmd-text-variant-accent(@name);
+    }
   }
-  .@{mdc-css-prefix}-@{mdc-bg-prefix}-@{name} {
-    .bg-variant(@name);
-  }
-}
-
-.color-variant(@name, @accent: true) when (@accent = true) {
-  .@{mdc-css-prefix}-@{mdc-text-prefix}-@{name} {
-    .text-variant(@name);
-    .text-accent-variant(@name);
-  }
-  .@{mdc-css-prefix}-@{mdc-bg-prefix}-@{name} {
-    .bg-variant(@name);
-    .bg-accent-variant(@name);
+  .@{zmdc-css-prefix}-@{zmdc-bg-prefix}-@{name} {
+    .zmd-bg-variant(@name);
+    & when(@accent = true) {
+      .zmd-bg-variant-accent(@name);
+    }
   }
 }
 
-.bw-color-variant(@name) {
-  .@{mdc-css-prefix}-@{mdc-text-prefix}-@{name} {
-    .text-bw-variant(@name);
+.zmd-color-variant-bw(@name) {
+  .@{zmdc-css-prefix}-@{zmdc-text-prefix}-@{name} {
+    .zmd-text-variant-bw(@name);
   }
-  .@{mdc-css-prefix}-@{mdc-text-prefix}-@{name} {
-    .text-bw-variant(@name);
+  .@{zmdc-css-prefix}-@{zmdc-text-prefix}-@{name} {
+    .zmd-text-variant-bw(@name);
   }
 }

@@ -1,7 +1,7 @@
 //== Get color variables from variables/colors.less by color name
 
 //## Main colors
-.get-color-main-variables(@name) {
+.zmd-get-color-main-variables(@name) {
   @color-50:  ~"mdc-@{name}-50";
   @color-100: ~"mdc-@{name}-100";
   @color-200: ~"mdc-@{name}-200";
@@ -15,7 +15,7 @@
 }
 
 //## Accent colors
-.get-color-accent-variables(@name) {
+.zmd-get-color-accent-variables(@name) {
   @color-A100: ~"mdc-@{name}-A100";
   @color-A200: ~"mdc-@{name}-A200";
   @color-A400: ~"mdc-@{name}-A400";
@@ -23,13 +23,13 @@
 }
 
 //## All colors
-.get-color-variables(@name) {
-  .get-color-main-variables(@name);
-  .get-color-accent-variables(@name);
+.zmd-get-color-variables(@name) {
+  .zmd-get-color-main-variables(@name);
+  .zmd-get-color-accent-variables(@name);
 }
 
 //## B/W colors
-.get-bw-color-variables(@name) {
+.zmd-get-bw-color-variables(@name) {
   @color-lighter:  ~"mdc-@{name}-lighter";
   @color-light:    ~"mdc-@{name}-light";
   @color-dark:     ~"mdc-@{name}-dark";
