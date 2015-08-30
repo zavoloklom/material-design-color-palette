@@ -84,13 +84,11 @@
       }
     }
   }
-
 }
 
 .zmd-text-variant-accent(@name) {
   // get colors
   .zmd-get-color-accent-variables(@name);
-
 
   &-A100 {
     color: @@color-A100;
@@ -125,6 +123,13 @@
 .zmd-text-variant-bw(@name) {
   // get colors
   .zmd-get-bw-color-variables(@name);
+
+  // use base color
+  color: @@color-base;
+  a&:hover,
+  a&:focus {
+    color: @@color-base;
+  }
 
   &-lighter {
     color: @@color-lighter;

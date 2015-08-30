@@ -124,6 +124,12 @@
   // get colors
   .zmd-get-bw-color-variables(@name);
 
+  // use base color
+  background-color: @@color-base;
+  a&:hover,
+  a&:focus {
+    background-color: @@color-base;
+  }
 
   &-lighter {
     background-color: @@color-lighter;

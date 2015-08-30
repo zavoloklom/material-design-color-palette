@@ -1,10 +1,12 @@
 .zmd-color-variant(@name, @accent: true) {
+  // Text color
   .@{zmdc-css-prefix}-@{zmdc-text-prefix}-@{name} {
     .zmd-text-variant(@name);
     & when(@accent = true) {
       .zmd-text-variant-accent(@name);
     }
   }
+  // Background color
   .@{zmdc-css-prefix}-@{zmdc-bg-prefix}-@{name} {
     .zmd-bg-variant(@name);
     & when(@accent = true) {
@@ -21,11 +23,14 @@
 }
 
 .zmd-color-variant-bw(@name) {
+  // Text color
   .@{zmdc-css-prefix}-@{zmdc-text-prefix}-@{name} {
     .zmd-text-variant-bw(@name);
   }
-  .@{zmdc-css-prefix}-@{zmdc-text-prefix}-@{name} {
-    .zmd-text-variant-bw(@name);
+  // Background color
+  .@{zmdc-css-prefix}-@{zmdc-bg-prefix}-@{name} {
+    .zmd-bg-variant-bw(@name);
+  }
   // Border color
   .@{zmdc-css-prefix}-@{zmdc-border-prefix}-@{name} {
     .zmd-border-variant-bw(@name);
