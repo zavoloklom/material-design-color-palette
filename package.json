@@ -1,0 +1,35 @@
+{
+  "name": "material-design-color-palette-docs",
+  "description": "Material Design Color Palette Docs",
+  "author": "Sergey Kupletsky <s.kupletsky@gmail.com> (http://github.com/zavoloklom)",
+  "license": "CC-BY-3.0",
+  "main": [
+    "./css/*",
+    "./js/*",
+    "./img/*",
+    "./icons/*",
+    "./*.html"
+  ],
+  "homepage": "https://zavoloklom.github.io/material-design-color-palette/",
+  "bugs": {
+    "url": "https://github.com/zavoloklom/material-design-color-palette/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zavoloklom/material-design-color-palette.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-pleeease": "^1.3.2",
+    "load-grunt-config": "^0.17.1",
+    "time-grunt": "^1.2.1"
+  },
+  "dependencies": {}
+}

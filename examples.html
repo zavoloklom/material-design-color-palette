@@ -5,7 +5,7 @@
     <meta name="HandheldFriendly" content="true" />
     <meta name="apple-mobile-web-app-capable" content="YES" />
     <!--[if IE]>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <![endif]-->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
@@ -33,13 +33,8 @@
 
     <title>Material Design Color Palette by zavoloklom</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/bootstrap.docs.min.css">
-    <link rel="stylesheet" href="stylesheets/jquery.highlight.css" >
-    <link rel="stylesheet" href="css/material-design-color-palette.min.css">
-    <link rel="stylesheet" href="stylesheets/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/docs.color-palette.min.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -52,7 +47,7 @@
     <meta name="twitter:creator" content="@zavoloklom">
     <meta name="twitter:title" content="Material Design Color Palette">
     <meta name="twitter:description" content="Material Design Color Palette is a LESS/CSS toolkit for easily usage material colors by Google in websites.">
-    <meta name="twitter:image:src" content="http://zavoloklom.github.io/material-design-color-palette/images/Material-Design-Color-Palette.png">
+    <meta name="twitter:image:src" content="http://zavoloklom.github.io/material-design-color-palette/img/Material-Design-Color-Palette.png">
 </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -62,7 +57,7 @@
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
-                <i class="md md-menu md-lg"></i>
+                <i class="zmdi zmdi-menu zmdi-hc-lg"></i>
             </button>
             <a class="navbar-brand" href="index.html"><strong>Material Design</strong> Color Palette</a>
         </div>
@@ -79,20 +74,20 @@
     </div>
 </div>
 
-<div class="jumbotron jumbotron-img hidden-print" style="background-image: url(images/header-bg.png)">
+<div class="jumbotron jumbotron-img hidden-print" style="background-image: url(img/header-bg.png)">
     <div class="container">
         <div class="col-xs-12">
-            <img src="icons/favicon-96x96.png" style="float: left; padding-top: 15px; padding-right: 24px;">
+            <img class="logo hidden-xs" src="icons/favicon-96x96.png">
             <h1>Material Design Color Palette</h1>
             <p>Material Design Color Palette is a LESS/CSS toolkit for easily usage material colors by Google in websites.</p>
             <div class="actions">
-                <a class="btn btn-default btn-lg download-btn" href="https://github.com/zavoloklom/material-design-color-palette/releases/download/v1.0.0/material-design-color-palette.zip" onclick="_gaq.push(['_trackEvent', 'Outbound Link', 'Download on GitHub']);">
-                    <i class="md md-file-download md-lg"></i>&nbsp;&nbsp;
-                    Download v1.0.0 (ZIP)
+                <a class="btn btn-default btn-lg download-btn" href="https://github.com/zavoloklom/material-design-color-palette/releases/download/1.1.0/material-design-color-palette.zip" onclick="_gaq.push(['_trackEvent', 'Outbound Link', 'Download on GitHub']);">
+                    <i class="zmdi zmdi-download zmdi-hc-lg"></i>&nbsp;&nbsp;
+                    Download 1.1.0 (ZIP)
                 </a>
             </div>
             <div class="inflated-egos">
-                Version 1.0.0
+                Version 1.1.0
                 &nbsp;&nbsp;
                 <a href="https://github.com/zavoloklom/material-design-color-palette" target="_blank">GitHub Project</a>
                 &nbsp;&nbsp;
@@ -103,25 +98,7 @@
 </div>
 
 <div id="social-buttons" class="hidden-xs">
-    <div class="container">
-        <ul class="list-inline">
-            <li class="git-tip">
-                <a href="https://gratipay.com/zavoloklom/" target="_blank" class="btn btn-default btn-xs gittip-btn">
-                    Support me on Gratipay
-                </a>
-            </li>
-            <li>
-                <iframe src="http://ghbtns.com/github-btn.html?user=zavoloklom&repo=material-design-color-palette&type=watch&count=true"
-                        allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
-            </li>
-            <li style="width: 90px;">
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://zavoloklom.github.io/material-design-color-palette" data-text="Material Design Color Palette" data-via="zavoloklom" data-hashtags="materialDesign">Tweet</a>
-            </li>
-            <li>
-                <div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://zavoloklom.github.io/material-design-color-palette"></div>
-            </li>
-        </ul>
-    </div>
+    <div id="jssocial"></div>
 </div>
 
 <div class="container">
@@ -157,7 +134,7 @@
                     <div class="alert alert-success">
                         <ul class="list-unstyled">
                             <li>
-                                <i class="md md-warning md-lg"></i>
+                                <i class="zmdi zmdi-warning zmdi-hc-lg"></i>
                                 You can change prefixes by customizing less files
                             </li>
                         </ul>
@@ -195,7 +172,7 @@
                     <div class="alert alert-success">
                         <ul class="list-unstyled">
                             <li>
-                                <i class="md md-warning md-lg"></i>
+                                <i class="zmdi zmdi-warning zmdi-hc-lg"></i>
                                 You can change prefixes by customizing less files
                             </li>
                         </ul>
@@ -220,9 +197,9 @@
                 </div>
                 <div class="col-md-9 col-sm-8">
                     <p>
-                        When you use MD Color Palette classes on links you get darker color on <code>hover</code> state.
+                        When you use MD Color Palette classes on links you get one step darker color on <code>hover</code> state.
                     </p>
-                    <p><strong>Example:</strong> for class <code>mdc-text-green-400</code> or <code>mdc-bg-green-400</code> main color is <kbd>green-400</kbd> and in hover state color is <kbd>green-500</kbd></p>
+                    <p><strong>Example:</strong> for class <code>mdc-text-green-400</code> or <code>mdc-bg-green-400</code> main color is <code>green-400</code> and in hover state color is <code>green-500</code></p>
                     <div>
                             <pre class="code" lang="html">
                                 <!-- Colored link -->
@@ -234,7 +211,7 @@
                     <div class="alert alert-success">
                         <ul class="list-unstyled">
                             <li>
-                                <i class="md md-warning md-lg"></i>
+                                <i class="zmdi zmdi-warning zmdi-hc-lg"></i>
                                 You can change prefixes by customizing less files
                             </li>
                         </ul>
@@ -251,10 +228,10 @@
             <div class="row">
                 <div class="col-md-3 col-sm-4">
                     <p>
-                        <i class="md md-settings md-spin md-2x mdc-text-green-400"></i>
+                        <i class="zmdi zmdi-settings md-spin zmdi-hc-2x mdc-text-green-400"></i>
                     </p>
                     <p>
-                        <i class="md md-local-florist md-2x mdc-text-yellow mdc-bg-green-400"></i>
+                        <i class="zmdi zmdi-flower-alt zmdi-hc-2x mdc-text-yellow mdc-bg-green-400"></i>
                     </p>
                 </div>
                 <div class="col-md-9 col-sm-8">
@@ -264,15 +241,15 @@
                     <div>
                             <pre class="code" lang="html">
                                 <!-- Colored icon -->
-                                <i class="md md-settings md-spin md-2x mdc-text-green-400"></i>
+                                <i class="zmdi zmdi-settings md-spin zmdi-hc-2x mdc-text-green-400"></i>
 
                                 <!-- Colored icon with colored background -->
-                                <i class="md md-local-florist md-2x mdc-text-yellow mdc-bg-green-400"></i></pre>
+                                <i class="zmdi zmdi-flower-alt zmdi-hc-2x mdc-text-yellow mdc-bg-green-400"></i></pre>
                     </div>
                     <div class="alert alert-success">
                         <ul class="list-unstyled">
                             <li>
-                                <i class="md md-warning md-lg"></i>
+                                <i class="zmdi zmdi-warning zmdi-hc-lg"></i>
                                 You can change prefixes by customizing less files
                             </li>
                         </ul>
@@ -283,7 +260,7 @@
     </div>
 
     <div class="col-md-3 hidden-sm hidden-xs hidden-print">
-        <div data-spy="affix" data-offset-top="450" data-offset-bottom="70" class="bs-docs-sidebar" role="complementary">
+        <div data-spy="affix" data-offset-top="470" data-offset-bottom="70" class="bs-docs-sidebar" role="complementary">
             <ul class="nav bs-docs-sidenav">
                 <li><a href="#primary">Primary colors</a></li>
                 <li><a href="#other">Other colors</a></li>
@@ -291,6 +268,11 @@
                 <li><a href="#icons">Material Design Icons</a></li>
             </ul>
             <a class="back-to-top" href="#top">Back to top</a>
+            <!-- Affix sidebar -->
+            <ins class="adsbygoogle"
+                 style="display:block; max-width: 200px; width:100%; height:200px; padding-top: 24px"
+                 data-ad-client="ca-pub-1677266632116401"
+                 data-ad-slot="5771234977"></ins>
         </div>
     </div>
 
@@ -300,8 +282,9 @@
 <footer class="container">
     <div class="col-md-9 col-xs-12">
         <hr />
-        <span class="text-center"><a href="https://github.com/zavoloklom" target="_blank"><img src="images/doctocat.png"></a></span>
-        <p>
+        <span class="pull-left"><a href="https://github.com/zavoloklom" target="_blank"><img src="img/doctocat.png"></a></span>
+        <p class="mdt-subhead-2"><strong>Donate:</strong> You can support me via <a class="paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=s%2ekupletsky%40gmail%2ecom&lc=US&item_name=Material%20Design%20Color%20Palette&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted">PayPal</a>, <a class="webmoney" href="https://funding.webmoney.ru/material-design-iconic-font/donate">WebMoney</a> or <a class="gratipay" href="http://gratipay.com/zavoloklom/" target="_blank">Gratipay</a></p>
+        <p class="mdt-body-1">
             <a href="https://github.com">GitHub</a> is the best way to build and ship software.<br>
             Powerful collaboration, code review, and code management for open source and private projects.
         </p>
@@ -309,18 +292,25 @@
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-<script src="javascripts/jquery.highlight.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="js/jssocials.min.js"></script>
+<script src='js/main.js'></script>
+<script src="js/jquery.highlight.js"></script>
 <script>
     $(document).ready(function(){
-        $('pre.code').highlight({source:1, zebra:1, indent:'tabs', list:'ol'});
+        // highlight code
+        $('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
     });
 </script>
 
-<script src="javascripts/main.js"></script>
+<!-- Google Adsense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-<script src='https://apis.google.com/js/platform.js'></script>
+<!-- Google Analytics -->
+<script src='//apis.google.com/js/platform.js'></script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 <script>
@@ -332,14 +322,17 @@
     ga('create', 'UA-56068812-2', 'auto');
     ga('send', 'pageview');
 
-</script>
-
-<script>
-    // Events
-    $('.gittip-btn').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'GitTip');
+    // Custom events
+    jQuery('.paypal').on('click', function() {
+        ga('send', 'event', 'button', 'click', 'Paypal');
     });
-    $('.download-btn').on('click', function() {
+    jQuery('.webmoney').on('click', function() {
+        ga('send', 'event', 'button', 'click', 'Webmoney');
+    });
+    jQuery('.gratipay').on('click', function() {
+        ga('send', 'event', 'button', 'click', 'Gratipay');
+    });
+    jQuery('.download-btn').on('click', function() {
         ga('send', 'event', 'button', 'click', 'Download');
     });
 </script>
