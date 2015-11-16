@@ -1,4 +1,4 @@
-# [Material Design Color Palette v1.1.0](http://zavoloklom.github.io/material-design-color-palette)
+# [Material Design Color Palette 1.1.0](http://zavoloklom.github.io/material-design-color-palette)
 
 [![Latest Version](https://img.shields.io/github/release/zavoloklom/material-design-color-palette.svg?style=flat-square&label=latest version)](https://github.com/zavoloklom/material-design-color-palette/tags)
 [![Software License](https://img.shields.io/badge/license-MIT License-blue.svg?style=flat-square)](LICENSE)
@@ -19,7 +19,7 @@ This color palette comprises primary and accent colors that can be used for illu
 
 Get started at [http://zavoloklom.github.io/material-design-color-palette](http://zavoloklom.github.io/material-design-color-palette)
 
-Download: [v1.1.0 (ZIP)](https://github.com/zavoloklom/material-design-color-palette/releases/download/v1.1.0/material-design-color-palette.zip)
+Download: [1.1.0 (ZIP)](https://github.com/zavoloklom/material-design-color-palette/releases/download/1.1.0/material-design-color-palette.zip)
 
 
 ### Install
@@ -53,8 +53,8 @@ Use this method to customize Material Design Color Palette using LESS.
 - Full details: [License page](http://zavoloklom.github.io/material-design-color-palette/license.html)
 
 ### Changelog
-- v1.1.0 - add some changes into LESS mixins and variables
-- v1.0.0 - add all colors from [Google](http://www.google.com/design/spec/style/color.html#color-color-palette)
+- 1.1.0 - add some changes into LESS mixins and variables
+- 1.0.0 - add all colors from [Google](http://www.google.com/design/spec/style/color.html#color-color-palette)
 
 ### Versioning
 Material Design Color Palette will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered with the following format:
