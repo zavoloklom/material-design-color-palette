@@ -9,10 +9,7 @@
       "Sergey Kupletsky <s.kupletsky@gmail.com> (http://github.com/zavoloklom)"
     ],
     "license": ["MIT", "CC-BY-3.0"],
-    "main": [
-      "./css/material-design-color-palette.css",
-      "./css/material-design-color-palette.min.css"
-    ],
+    "main": "./css/material-design-color-palette.css",
     "ignore": [
         "*/.*",
         "*.json",
