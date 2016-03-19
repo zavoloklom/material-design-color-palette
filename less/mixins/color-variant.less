@@ -11,6 +11,18 @@
       .zmd-bg-variant-accent(@name);
     }
   }
+  .@{zmdc-css-prefix}-@{zmdc-fill-prefix}-@{name} {
+    .zmd-fill-variant(@name);
+    & when(@accent = true) {
+      .zmd-fill-variant-accent(@name);
+    }
+  }
+  .@{zmdc-css-prefix}-@{zmdc-stroke-prefix}-@{name} {
+    .zmd-stroke-variant(@name);
+    & when(@accent = true) {
+      .zmd-stroke-variant-accent(@name);
+    }
+  }
 }
 
 .zmd-color-variant-bw(@name) {
@@ -19,5 +31,11 @@
   }
   .@{zmdc-css-prefix}-@{zmdc-text-prefix}-@{name} {
     .zmd-text-variant-bw(@name);
+  }
+  .@{zmdc-css-prefix}-@{zmdc-fill-prefix}-@{name} {
+    .zmd-fill-variant-bw(@name);
+  }
+  .@{zmdc-css-prefix}-@{zmdc-stroke-prefix}-@{name} {
+    .zmd-stroke-variant-bw(@name);
   }
 }
