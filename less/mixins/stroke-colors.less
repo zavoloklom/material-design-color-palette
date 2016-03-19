@@ -1,0 +1,80 @@
+//-- Contextual background color variations
+
+.zmd-stroke-variant(@name, @all: true) {
+  // get colors
+  .zmd-get-color-variables(@name);
+
+  // use primary color
+  stroke: @@color-500;
+
+  // color variants
+  & when (@all = true) {
+    &-50 {
+      stroke: @@color-50;
+    }
+    &-100 {
+      stroke: @@color-100;
+    }
+    &-200 {
+      stroke: @@color-200;
+    }
+    &-300 {
+      stroke: @@color-300;
+    }
+    &-400 {
+      stroke: @@color-400;
+    }
+    &-500 {
+      stroke: @@color-500;
+    }
+    &-600 {
+      stroke: @@color-600;
+    }
+    &-700 {
+      stroke: @@color-700;
+    }
+    &-800 {
+      stroke: @@color-800;
+    }
+    &-900 {
+      stroke: @@color-900;
+    }
+  }
+}
+
+.zmd-stroke-variant-accent(@name) {
+  // get colors
+  .zmd-get-color-variables(@name);
+
+  &-A100 {
+    stroke: @@color-A100;
+  }
+  &-A200 {
+    stroke: @@color-A200;
+  }
+  &-A400 {
+    stroke: @@color-A400;
+  }
+  &-A700 {
+    stroke: @@color-A700;
+  }
+}
+
+.zmd-stroke-variant-bw(@name) {
+  // get colors
+  .zmd-get-bw-color-variables(@name);
+
+
+  &-lighter {
+    stroke: @@color-lighter;
+  }
+  &-light {
+    stroke: @@color-light;
+  }
+  &-dark {
+    stroke: @@color-dark;
+  }
+  &-darker {
+    stroke: @@color-darker;
+  }
+}

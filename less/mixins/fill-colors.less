@@ -1,0 +1,80 @@
+//-- Contextual background color variations
+
+.zmd-fill-variant(@name, @all: true) {
+  // get colors
+  .zmd-get-color-variables(@name);
+
+  // use primary color
+  fill: @@color-500;
+
+  // color variants
+  & when (@all = true) {
+    &-50 {
+      fill: @@color-50;
+    }
+    &-100 {
+      fill: @@color-100;
+    }
+    &-200 {
+      fill: @@color-200;
+    }
+    &-300 {
+      fill: @@color-300;
+    }
+    &-400 {
+      fill: @@color-400;
+    }
+    &-500 {
+      fill: @@color-500;
+    }
+    &-600 {
+      fill: @@color-600;
+    }
+    &-700 {
+      fill: @@color-700;
+    }
+    &-800 {
+      fill: @@color-800;
+    }
+    &-900 {
+      fill: @@color-900;
+    }
+  }
+}
+
+.zmd-fill-variant-accent(@name) {
+  // get colors
+  .zmd-get-color-variables(@name);
+
+  &-A100 {
+    fill: @@color-A100;
+  }
+  &-A200 {
+    fill: @@color-A200;
+  }
+  &-A400 {
+    fill: @@color-A400;
+  }
+  &-A700 {
+    fill: @@color-A700;
+  }
+}
+
+.zmd-fill-variant-bw(@name) {
+  // get colors
+  .zmd-get-bw-color-variables(@name);
+
+
+  &-lighter {
+    fill: @@color-lighter;
+  }
+  &-light {
+    fill: @@color-light;
+  }
+  &-dark {
+    fill: @@color-dark;
+  }
+  &-darker {
+    fill: @@color-darker;
+  }
+}
